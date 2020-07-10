@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Ingresar Pedido</title>
+    <style>
+        button {
+            background-color: red;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+
+        }
+
+        #cliente {
+
+
+            color: whitesmoke;
+            width: 500px;
+        }
+
+        #fecha {
+
+            color: whitesmoke;
+            width: 500px;
+        }
+
+        #descripcion {
+            color: whitesmoke;
+            width: 500px;
+        }
+
+        #cantidad {
+            color: whitesmoke;
+            width: 500xp;
+        }
+
+        #total {
+            color: whitesmoke;
+            width: auto;
+        }
+
+        #enviar {
+
+            width: 100px;
+            background-color: skyblue;
+        }
+
+        h1 {
+            text-align: center;
+            color: whitesmoke;
+            font-size: 45px;
+        }
+
+        body {
+            background-image: url("img/c.jpg");
+        }
+
+        input {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Ingrese el Pedido</h1>
+    <form action="ingresodepedido.php" method="post">
+        <a id="cliente">Cliente: <input type="text" name="cliente" /></a>
+        <br>
+        <br>
+        <a id="fecha">Fecha de Entrega: <input type="date" name="fecha" /></a>
+        <br>
+        <br>
+        <a id="descripcion">Descripción<input type="tex" name="descripcion" /></a>
+        <br>
+        <br>
+        <a id="cantidad">Cantidad de Casas:<input type="text" name="cantcasas" /></a>
+        <br>
+        <br>
+        <a id="total">Total de Pedido: <input type="text" name="totalpagar" /></a>
+        <input type="Submit" id="enviar" />
+        <br>
+    </form>
+    <br>
+    <a href=PanelDeControl.php><button type="button"> Inicio</button></a>
+</body>
+
+</html>
